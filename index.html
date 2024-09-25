@@ -3,9 +3,133 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>E Commerse</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <script
+      src="https://kit.fontawesome.com/832b3fe72a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body>
-    <h1>This is a sample code for javascript practice</h1>
+    <header>
+      <nav class="headerNavContainer">
+        <a href="#" class="shopify"
+          ><i class="fa-brands fa-shopify"></i><span>Shopify</span></a
+        >
+        <form class="searchForm">
+          <input
+            type="search"
+            name=""
+            id="searchId"
+            placeholder="Search for products,brands and more"
+          />
+          <i class="fa-solid fa-magnifying-glass" id="searchLogo"></i>
+        </form>
+        <div class="signLogDiv">
+          <button class="btns logBtn">Log In</button>
+          <button class="btns signBtn">Sign Up</button>
+        </div>
+         <div class="addToCardDiv">
+         <!-- <i class="fa-solid fa-heart"></i> -->
+          <span id="wishList">Wishlist</span>
+        </div>
+       
+        <div class="addToCardDiv">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <small id="cartCount"></small>
+          <span>Cart</span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="ctaegoriesContainer">
+          <div class="categChildData">
+            <a href=""
+              ><img
+                src="./images/categories/mobile.jpg"
+                class="categImages"
+                alt="" /></a
+            ><span class="cateHeading">Mobiles</span>
+          </div>
+          <div class="categChildData">
+            <a href=""
+              ><img
+                src="./images/categories/gricesy.avif"
+                class="categImages"
+                alt="" /></a
+            ><span class="cateHeading">Grocery</span>
+          </div>
+          <div class="categChildData">
+            <a href=""
+              ><img
+                src="./images/categories/clothes.jpg"
+                class="categImages"
+                alt="" /></a
+            ><span class="cateHeading">Clothes</span>
+          </div>
+          <div class="categChildData">
+            <a href=""
+              ><img
+                src="./images/categories/gadgets.avif"
+                class="categImages"
+                alt="" /></a
+            ><span class="cateHeading">Electronics</span>
+          </div>
+          <div class="categChildData">
+            <a href=""
+              ><img
+                src="./images/categories/furniture.avif"
+                class="categImages"
+                alt="" /></a
+            ><span class="cateHeading">Home-Alliances</span>
+          </div>
+          <div class="categChildData">
+            <a href=""
+              ><img
+                src="./images/categories/twoWheelers.avif"
+                class="categImages"
+                alt="" /></a
+            ><span class="cateHeading"> Two-Wheelers</span>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="carouselContainer">
+          <div class="caroselSlide">
+            <img src="./images/carousel/ajio.webp" alt="" class="carouselImg"  />
+             <img src="./images/carousel/kick.jpg" alt="" class="carouselImg" id="thirdPic" /> 
+         <img
+            src="./images/carousel/kriti.avif"
+            alt=""
+            class="carouselImg" id="firstPic"
+          />
+         
+          </div>
+          <i class="fa-solid arrowsSlide fa-angle-left" onclick="moveSlide(-1)"></i>
+          <i class="fa-solid arrowsSlide fa-angle-right" onclick="moveSlide(1)"></i>
+        </div>
+      </section>
+      <section>
+        <div class="clothesDivContainer dataContainer">
+           <h1 class="categoryTitle">Best of Clothes</h1>
+        <div id="bestClothes">
+         
+        </div>
+      </div>
+        <div class="electronicsDivContainer dataContainer">
+           <h1 class="categoryTitle">Best of Electronics</h1>
+        <div id="bestElectronics">
+         </div>
+        
+      </div>
+      </section>
+    </main>
+
+    
+    <script src="JS/script.js"></script>
+    <script src="JS/productData.js"></script>
   </body>
 </html>

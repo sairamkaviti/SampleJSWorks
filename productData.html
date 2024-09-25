@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Individual Product Data</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <script
+      src="https://kit.fontawesome.com/832b3fe72a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="headerNavContainer">
+        <a href="#" class="shopify"
+          ><i class="fa-brands fa-shopify"></i><span>Shopify</span></a
+        >
+        <form class="searchForm">
+          <input
+            type="search"
+            name=""
+            id="searchId"
+            placeholder="Search for products,brands and more"
+          />
+          <i class="fa-solid fa-magnifying-glass" id="searchLogo"></i>
+        </form>
+        <div class="signLogDiv">
+          <button class="btns logBtn">Log In</button>
+          <button class="btns signBtn">Sign Up</button>
+        </div>
+        <div class="addToCardDiv">
+          <!-- <i class="fa-solid fa-heart"></i> -->
+          <span id="wishList">Wishlist</span>
+        </div>
+
+        <div class="addToCardDiv" id="addToCartDivId">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <small id="cartCount"></small>
+          <span>Cart</span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="recievedProductContainer">
+        <div id="wishListLogoDiv">
+          <img id="image" alt="" />
+        </div>
+        <div class="productContentText" id="rcvdProCon">
+          <h2 id="title"></h2>
+          <div class="ratingsDiv">
+            <span id="rating"></span>
+            <span id="reviews"></span>
+          </div>
+          <span id="extraOff"></span>
+          <div class="proPricesOfferDiv">
+            <h1 id="productPrice"></h1>
+            <strike id="productPriceStrike"></strike>
+            <h3 id="priceOffer"></h3>
+          </div>
+
+          <h3 id="availOffer"></h3>
+          <p id="firstSplOfr"></p>
+          <p id="secondSplOfr"></p>
+          <p id="thirdSplOfr"></p>
+          <p id="description"></p>
+        </div>
+      </div>
+      <div id="toastDiv"></div>
+    </main>
+
+       <script src="JS/script.js"></script>
+       <script src="JS/productData.js"></script>
+       <script>
+        let addToCartDivId=document.getElementById("addToCartDivId");
+        addToCartDivId.addEventListener("click",()=>{
+          window.location.href="./addToCart.html"
+        })
+       </script>
+  </body>
+</html>
